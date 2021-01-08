@@ -1,0 +1,16 @@
+@import "./helper/variable";
+@import "./helper/mixin";
+
+@import "./base/reset";
+
+@import "./layout/header";
+@import "./layout/carousel";
+@import "./layout/bestseller";
+@import "./layout/cate";
+@import "./layout/courses";
+@import "./layout/footer";
+@import "./layout/intro";
+@import "./layout/recommend";
+@import "./layout/student";
+
+@import "./components/responsive";

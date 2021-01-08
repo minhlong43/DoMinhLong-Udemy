@@ -1,0 +1,117 @@
+@mixin search() {
+  form {
+    flex-grow: 5;
+    background-color: whitesmoke;
+    .input-group {
+      border: 1px solid #00000026;
+    }
+    i {
+      color: #e40cd4;
+      padding: 0.8rem;
+      transition: 0.5s;
+      cursor: pointer;
+      background-color: transparent;
+      &:hover {
+        background: red;
+        color: $color-second;
+      }
+      //   &:focus {
+      //     box-shadow: none;
+      //   }
+    }
+    input {
+      border: transparent;
+      background-color: transparent;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@mixin star() {
+  .item {
+    margin-bottom: 1.5rem;
+    height: 22rem;
+  }
+  .info {
+    .vote {
+      i {
+        color: #dedfe0;
+        font-size: 0.685rem;
+      }
+      .rate {
+        position: absolute;
+        top: 0;
+        left: 0;
+        i {
+          color: #f4c150;
+          font-size: 0.685rem;
+        }
+        i:nth-child(5)::before {
+          color: #f4c150;
+          content: "\f089";
+        }
+      }
+    }
+    padding: 1rem 0.626rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    b {
+      font-size: 0.825rem;
+      margin-bottom: 1rem;
+    }
+    p,
+    span {
+      font-size: 0.75rem;
+      margin-bottom: 0;
+    }
+    .cost {
+      span {
+        font-size: 0.75rem;
+        text-decoration: line-through;
+      }
+      b {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+@mixin hover-item {
+  .border {
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
+      0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  }
+  .item:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+    img {
+      opacity: 0.7;
+    }
+  }
+}
+@mixin star-respon() {
+  .info {
+    > b {
+      font-size: 0.75rem;
+    }
+    p {
+      font-size: 0.675rem;
+    }
+    .vote i,
+    .vote b,
+    .vote span,
+    .vote .rate i {
+      font-size: 0.5rem;
+    }
+    .cost {
+      span {
+        font-size: 0.75rem;
+      }
+      b {
+        font-size: 0.8725rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.header_left {
+  //   display: flex;
+  //   align-items: center;
+  a {
+    flex-grow: 1;
+  }
+  .search-respon {
+    display: none;
+  }
+  .categories {
+    padding: 0.5rem 0;
+    margin-right: 1rem;
+    flex-grow: 1;
+    i {
+      color: #8f96a6;
+    }
+  }
+  .categories:hover {
+    cursor: pointer;
+    background-color: #f2f3f5;
+  }
+  > i {
+    display: none;
+  }
+
+  @include search();
+}
+.header_right {
+  .box {
+    font-size: 0.875rem;
+    margin-right: 0.75rem;
+    :hover {
+      background-color: #f2f3f5;
+    }
+  }
+  .space {
+    border-left: 1px solid #8f96a6;
+    margin-right: 0.75rem;
+  }
+  .shopping {
+    :hover {
+      background-color: #f2f3f5;
+      border-radius: 50%;
+    }
+  }
+}

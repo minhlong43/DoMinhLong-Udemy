@@ -1,0 +1,276 @@
+@media screen and (max-width: 1200px) {
+  #courses {
+    .col-4 {
+      flex: 0 0 25%;
+      max-width: 25%;
+      b {
+        font-size: 0.875rem;
+      }
+    }
+    .col-8 {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+  }
+  #cate {
+    .col-3 {
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+  }
+  #student {
+    .comment {
+      padding: 2rem 0.75rem;
+
+      margin: 1rem 0.5rem;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .col-7 {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  .col-5 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .header_left {
+    padding-left: 3rem;
+  }
+  .header_right {
+    .box {
+      display: none;
+    }
+  }
+  #courses {
+    .intro {
+      .container {
+        align-items: self-start !important;
+      }
+      text-align: center;
+      .info {
+        p {
+          font-size: 1rem;
+        }
+        span {
+          font-size: 0.875rem;
+        }
+      }
+      .item {
+        display: none;
+      }
+    }
+    .list {
+      .left {
+        display: none;
+      }
+      .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  #intro {
+    .info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  #recommend {
+    .item {
+      i {
+        display: none;
+      }
+    }
+  }
+  #cate {
+    .col-3 {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+  }
+  #student {
+    .partners {
+      max-width: 85%;
+    }
+    .resign {
+      max-width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header_left {
+    justify-content: space-between;
+
+    a {
+      flex-grow: 0;
+    }
+    i {
+      font-size: 1.25rem;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      .search-respon {
+        display: inline-block;
+        margin-left: 0.75rem;
+      }
+    }
+
+    .navbar-toggler {
+      border-color: #fff;
+    }
+    .categories {
+      display: none !important;
+    }
+    form {
+      display: none;
+    }
+  }
+  .header_right {
+    .space,
+    .log {
+      display: none;
+    }
+  }
+  #carousel {
+    .row {
+      max-width: 70%;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+    input {
+      font-size: 0.825rem;
+    }
+  }
+  #courses {
+    .container {
+      max-width: unset;
+    }
+    .col-8 {
+      padding: 0;
+    }
+    .intro {
+      display: none;
+    }
+    .nav-tabs {
+      font-size: 0.8rem;
+    }
+    .list {
+      @include star-respon();
+    }
+  }
+  #intro {
+    .info {
+      p {
+        font-size: 0.825rem;
+      }
+      span {
+        font-size: 0.75rem;
+      }
+    }
+  }
+  #bestseller {
+    h4 {
+      font-size: 0.75rem;
+    }
+    @include star-respon();
+  }
+  #recommend {
+    h4 {
+      font-size: 0.9375rem;
+    }
+    p,
+    button {
+      font-size: 0.75rem;
+    }
+  }
+  #cate {
+    h3 {
+      font-size: 1rem;
+    }
+    .col-3 {
+      flex: 0 0 90%;
+      max-width: 90%;
+      padding: 0.5rem;
+      span {
+        font-size: 0.825rem;
+      }
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  #student {
+    h3 {
+      font-size: 0.9375rem;
+    }
+    .comment {
+      b,
+      span {
+        font-size: 0.825rem;
+      }
+    }
+    .partners_logo {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 18.75rem;
+      margin: auto;
+    }
+    .space {
+      display: none;
+    }
+    .resign {
+      max-width: 100%;
+      .col-5 {
+        flex: 0 0 50%;
+      }
+    }
+    .resign .content_header {
+      font-size: 0.875rem;
+    }
+    .resign .content_body {
+      font-size: 0.725rem;
+    }
+    .resign .content_btn .btn {
+      font-size: 0.75rem;
+    }
+  }
+  .container-fluid {
+    .footer_top {
+      height: 100%;
+      margin: 0;
+      .col-9 {
+        display: none;
+      }
+    }
+    .footer_bot {
+      display: flex;
+      flex-direction: column;
+      .right ul {
+        display: flex;
+        justify-content: flex-start;
+        li {
+          margin: 0.5rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  #carousel {
+    height: 15rem;
+  }
+  #courses {
+    .nav-tabs {
+      font-size: 0.6725rem;
+    }
+  }
+}

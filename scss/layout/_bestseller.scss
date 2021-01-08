@@ -1,0 +1,15 @@
+#bestseller {
+  h4 {
+    padding-top: 1rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #505763;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: #000 !important;
+  }
+    
+  @include star();
+  @include hover-item();
+}

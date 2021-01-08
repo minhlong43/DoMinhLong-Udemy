@@ -1,0 +1,96 @@
+#courses {
+  padding-bottom: 1.5rem;
+  .slick-prev:before,
+  .slick-next:before {
+    color: #000 !important;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    .button {
+      margin: 0.5rem;
+      border: 1px solid #000;
+      color: #000;
+      padding: 1.5rem;
+      text-align: center;
+      width: 0.5rem;
+      transition: all 300ms ease;
+      :hover {
+        cursor: pointer;
+        background-color: #000;
+        color: #fff;
+        transition: all 300ms ease;
+      }
+    }
+  }
+
+  .intro {
+    background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+    color: #ffffff;
+    padding: 0.75rem 0;
+    .info {
+      display: flex;
+      align-items: center;
+      width: 30%;
+      i {
+        font-size: 2.75rem;
+        margin-right: 1rem;
+        color: #ffffff;
+      }
+      p {
+        margin-bottom: 0;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .list {
+    padding-top: 2rem;
+    .left {
+      background: #f7f8fa;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      b {
+        margin: auto 1.5rem 0 1.5rem;
+        font-size: 1.25rem;
+      }
+      p {
+        margin: 0 1.5rem auto 1.5rem;
+      }
+    }
+    .right {
+      .nav-item {
+        position: relative;
+        ::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0.25rem;
+          background-image: linear-gradient(to right, #292872, #1b049b);
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+        }
+        :focus::after {
+          width: 100%;
+        }
+        a {
+          color: #29303b;
+        }
+        :hover {
+          color: #007791;
+          cursor: pointer;
+        }
+        .nav-link {
+          border: unset;
+          padding: 0.75rem 0.5rem;
+        }
+      }
+    }
+    @include star();
+    @include hover-item();
+  }
+}
